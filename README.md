@@ -36,3 +36,13 @@ MONGO_URI=mongodb://tsx:tsx@localhost:27017?authSource=admin
 ```
 uv run main.py
 ```
+
+---
+
+## Local Preview
+
+Here’s what the application looks like:
+
+![App Screenshot](screenshots/app.png)
+
+---
