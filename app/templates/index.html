@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Repository Activity Monitor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>🔄 GitHub Repository Activity Monitor</h1>
+      <p>Real-time monitoring of repository events</p>
+    </header>
+
+    <div class="status-bar">
+      <div class="status-indicator">
+        <span class="status-dot" id="statusDot"></span>
+        <span id="statusText">Connecting...</span>
+      </div>
+      <div class="last-updated">
+        Last updated: <span id="lastUpdated">Never</span>
+      </div>
+    </div>
+
+    <div class="activity-feed" id="activityFeed">
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>Loading activity...</p>
+      </div>
+    </div>
+
+    <div class="empty-state" id="emptyState" style="display: none;">
+      <div class="empty-icon">📭</div>
+      <h3>No activity yet</h3>
+      <p>Waiting for repository events...</p>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
