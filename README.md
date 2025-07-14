@@ -1,6 +1,8 @@
-## Starting the database
+# Project Setup Guide
 
-```
+## 1. Start the MongoDB Database
+
+```bash
 docker compose up
 ```
 
